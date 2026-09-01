@@ -162,7 +162,6 @@ Health check: `https://localhost:5000/health` → `{ "status": "OK", "protocol":
 | POST | `/api/gigs` | Bearer (freelancer) | – | 201 |
 
 Example response (note that `passwordHash` is never returned):
-
 ```json
 {
   "message": "Login successful",
@@ -170,13 +169,11 @@ Example response (note that `passwordHash` is never returned):
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9…"
 }
 ```
-
 ## 7. Testing with Postman
 
 1. Import both files from `postman/`.
 2. Select the **HustleHub Local** environment.
-3. Disable SSL verification: **Settings ⚙ → General → SSL certificate verification → OFF**
-   (required because the certificate is self-signed).
+3. Disable SSL verification: **Settings ⚙ → General → SSL certificate verification → OFF** (required because the certificate is self-signed).
 4. Run the collection. It covers valid registration and login, protected-route
    access with a token, and invalid scenarios: duplicate email (409), invalid
    input (400), wrong password (401) and missing token (401).
