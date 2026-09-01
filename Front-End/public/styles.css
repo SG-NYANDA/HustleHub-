@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
 
-:root {
-  --ink: #5E7380;
+:root 
+{ --ink: #5E7380;
   --muted: #517891;
   --paper: #f8fcfe;
   --canvas: #edf7fb;
@@ -12,7 +12,6 @@
   --line: #77B1D4;
   --shadow: 7px 7px 0 var(--ink);
 }
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--canvas); color: var(--ink); font-family: 'Space Grotesk', sans-serif; }
@@ -124,7 +123,6 @@ footer small { color: var(--muted); font: 10px 'DM Mono', monospace; text-transf
   .how-grid { display: block; }
   .how .steps { margin-top: 42px; }
 }
-
 @media (max-width: 520px) {
   nav { gap: 14px; }
   nav a { display: none; }
