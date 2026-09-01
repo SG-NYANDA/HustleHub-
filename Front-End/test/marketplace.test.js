@@ -8,7 +8,9 @@ let cookie;
 test.before(async () => {
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   origin = `http://127.0.0.1:${server.address().port}`;
-});
+}
+      );
+
 test.after(() => server.close());
 
 async function api(path, options = {}) {
@@ -16,7 +18,6 @@ async function api(path, options = {}) {
   const data = await response.json();
   return { response, data };
 }
-
 test('marketplace API protects and records the booking flow', async () => {
   const health = await api('/api/health');
   assert.equal(health.response.status, 200);
