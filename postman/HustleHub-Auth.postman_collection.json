@@ -13,7 +13,8 @@
   "item": [
     {
       "name": "Health Check",
-      "request": {
+      "request": 
+      {
         "method": "GET",
         "header": [],
         "url": { "raw": "{{baseUrl}}/health", "host": ["{{baseUrl}}"], "path": ["health"] }
@@ -317,6 +318,7 @@
         "url": { "raw": "{{baseUrl}}/users/me", "host": ["{{baseUrl}}"], "path": ["users", "me"] }
       }
     },
+    
     {
       "name": "Get Current User - Garbage Token (Invalid)",
       "event": [
