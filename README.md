@@ -180,11 +180,9 @@ Example response (note that `passwordHash` is never returned):
 4. Run the collection. It covers valid registration and login, protected-route
    access with a token, and invalid scenarios: duplicate email (409), invalid
    input (400), wrong password (401) and missing token (401).
-
-   https://drive.google.com/file/d/1y2pxmgzcaNNCeSOs0njP7pPBZ69VCoaM/view?usp=sharing
-
 Screenshots of these responses are included in the submission.
 
 ## 8. Demonstration video
 
-**Video link:** <paste your link here>
+**Video link:** <
+   https://drive.google.com/file/d/1y2pxmgzcaNNCeSOs0njP7pPBZ69VCoaM/view?usp=sharing>
