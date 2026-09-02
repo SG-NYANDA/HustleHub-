@@ -4,6 +4,8 @@ A secure, dependency-light freelance marketplace prototype. It supports service 
 
 ## Run
 
+
+
 Requires Node.js 20+.
 
 ```bash
