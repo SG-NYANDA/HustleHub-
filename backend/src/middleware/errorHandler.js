@@ -16,6 +16,7 @@ function errorHandler(err, req, res, next) {
   } else if (!isProduction) {
     console.warn('[HANDLED ERROR]', err.message);
   }
+  
 
   res.status(statusCode).json({
     success: false,
