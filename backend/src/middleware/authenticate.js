@@ -2,6 +2,7 @@ const { verifyToken } = require('../utils/token');
 const AppError = require('../utils/AppError');
 const userStore = require('../models/userStore');
 
+
 function authenticate(req, res, next) {
   const authHeader = req.headers.authorization || '';
   const [scheme, token] = authHeader.split(' ');
