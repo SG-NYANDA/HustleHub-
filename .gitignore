@@ -14,3 +14,4 @@ postman/reports/
 *.log
 .DS_Store
 Thumbs.db
+postman/postman/
